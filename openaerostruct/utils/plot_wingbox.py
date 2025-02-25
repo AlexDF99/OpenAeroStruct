@@ -152,9 +152,13 @@ class Display(object):
         #     self.pt_names = pt_names = list(set(pt_names))
         #     pt_name = pt_names[0]
 
-
-        self.pt_names = pt_names = ["AS_point_0", "AS_point_1"]
-        pt_name = self.pt_names[0]
+        # Ensure the order is consistent by sorting
+        if pt_names:
+            self.pt_names = pt_names = sorted(list(set(pt_names)))
+            pt_name = pt_names[0]
+            
+        #self.pt_names = pt_names = ["AS_point_0", "AS_point_1"]
+        #pt_name = self.pt_names[0]
 
         self.names = names
         n_names = len(names)
