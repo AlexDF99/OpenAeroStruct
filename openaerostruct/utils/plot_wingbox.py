@@ -153,7 +153,6 @@ class Display(object):
         #     pt_name = pt_names[0]
 
 
-        print("modified-------------------------------------------------------------")
         self.pt_names = pt_names = ["AS_point_0", "AS_point_1"]
         pt_name = self.pt_names[0]
 
