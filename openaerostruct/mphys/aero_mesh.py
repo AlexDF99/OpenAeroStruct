@@ -27,7 +27,7 @@ class AeroMesh(om.IndepVarComp):
         else:
             xpts = np.zeros(0)
         self.add_output(
-            MPhysVariables.Aerodynamics.Mesh.COORDINATES,
+            MPhysVariables.Aerodynamics.Surface.Mesh.COORDINATES,
             distributed=True,
             val=xpts,
             shape=xpts.size,
